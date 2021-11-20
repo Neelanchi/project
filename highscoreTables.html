@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>World Of Games</title>
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <!--TEMPLATED-->
+        <link rel="stylesheet" href="assets/css/TEMPLATED.css">
+        <!--Custom CSS-->
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body class="font-size">
+        <header>
+            <nav id="navigation">
+                <ul class="nav navbar-nav align-middle">
+                    <li class="col-3"><a href="index.html">Home</a></li>
+                    <li class="col-3"><a href="guessNumber.html">Guess the number</a></li>
+                    <li class="col-3 memoryButton"><a href="memory.html">Memory</a></li>
+                    <li class="col-3"><a href="highscoreTables.html" class="active">High scores</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div class="padding">
+                <h2> TOP 5 PLAYERS - Guess the number game </h2>
+                <div id="highScoreGuess"></div>
+                <button  type="button" class="button fit play" onclick="window.location.href='/WorldOfGames/guessNumber.html'">Play</button>
+            </div>
+            <div class="padding">
+                <h2> TOP 5 PLAYERS - Memory game </h2>
+                <div id="highScoreMemory"></div>
+                <button  type="button" class="button fit play" onclick="window.location.href='/WorldOfGames/memory.html'">Play</button>
+            </div>
+        </section>
+        <footer>
+            <ul class="icons">
+                <li><a target="_blank" href="https://twitter.com/explore" class="icon fa-twitter font-size"><span class="label">Twitter</span></a></li>
+                <li><a target="_blank" href="https://www.facebook.com/" class="icon fa-facebook font-size"><span class="label">Facebook</span></a></li>
+            </ul>
+        </footer>
+        <!--JQuery-->
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <!--Font Awesome-->
+        <script src="https://kit.fontawesome.com/e10eaf955c.js" crossorigin="anonymous"></script>
+        <!--High score-->
+        <script src="assets/js/highScore.js"></script>
+        <script src="assets/js/highscoreTables.js"></script>
+    </body>
+</html>
